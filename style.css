@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+.lexend-exa-<uniquifier> {
+    font-family: "Lexend Exa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-image: url(img/digital-lavender-natural-landscape.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(191, 7, 197);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: 500px;
+}
+
+header .logo:hover {
+    color: rgb(145, 92, 137);
+    background: wheat;
+    transition: 1s;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+    border-bottom: 5px solid rgb(167, 73, 204);
+    padding: 2px;
+}
+
+/* Contenido de la web */
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contenido .tituloBox h2 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contenido .tituloBox h2 span {
+    background: rgb(167, 73, 204);
+    color: white;
+    padding: 0 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.contenido .tituloBox a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(145, 92, 137);
+    background: wheat;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a:hover {
+    color: white;
+    background-color: rgb(167, 73, 204);
+    transition: 0.5s;
+}
+
+.contenido .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    margin-top: 60px;
+    z-index: -5;
+}
+
+.contenido .imgBox img {
+    height: 40vh;
+
+}
+
+.contenido .imgBox img:hover {
+    height: 50vh;
+}
+
+/*Contenido Quien soy */
+
+.contenido .quienSoy {
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contenido .quienSoy h1 {
+    color: rgb(191, 7, 197);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.contenido .saludo img {
+    height: 38vh;
+
+}
+
+.contenido .presentacion {
+    color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    border-style: groove;
+    padding: 20px 40px;
+    background-color: #0000009c;
+}
+
+/*Copyright*/
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 550px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/*RRSS*/
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+    color: rgb(44, 233, 170);
+    transition: 0.3s;
+}
+
+
+/* Circulo */
+.circulo {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    background: rgba(167, 73, 204, 0.295);
+    clip-path: circle(700px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+/*Contacto*/
+.formulario {
+    position: relative;
+    padding: 50px 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+legend{
+    font-weight: bolder;
+
+}
+fieldset{
+    margin:20px;
+    padding: 10px;
+}
+
+.apartado{
+    margin-bottom: 10px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#botones{
+    font-size: 1rem;
+    padding: 12px 24px;    
+    background-color: #007bff;
+    color: white;           
+    border: none;           
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+#botones:hover {
+    background-color: #0056b3; 
+}
+
+.comentarios textarea{
+    width: 100%;
+    height: 120px;
+    font-size: 1rem;
+
+}
+
+.centrado{
+    margin-left: 150px;
+}
+
+/*CV*/
+body .cv {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    color: #ffffff;
+    display: block;
+
+}
+
+.contenido-cv {
+    border: 5px rgb(191, 7, 197);
+    border-style: groove;
+    background-color: #55065c54;
+}
+
+h1,
+h2 {
+    color: #06ffb4;
+}
+
+.datos-personales a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cv h2 {
+    border-bottom: 2px solid #06ffb4;
+    padding-bottom: 0.2rem;
+}
+
+.datos-personales .informacion p {
+    padding: 0 0;
+    margin: 0.3rem;
+}
+
+.datos-personales .informacion,
+.formacion .entrada,
+.experiencia .entrada,
+.informatica p,
+.idiomas p,
+.otros p {
+    margin: 0.5rem 0;
+}
+
+.modelo-dos-columnas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.izquierda {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.derecha {
+    padding: 1rem;
+}
+
+/*proyectos*/
+.proyectos {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.proyectos h2 {
+    color: bisque;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.proyectos a {
+    text-decoration: none;
+    color: aquamarine;
+    margin-left: 350px;
+    font-weight: bold;
+}
